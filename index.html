@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- =====================================================================
+     SITE_URL: troque TODAS as ocorrências de
+     https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app
+     pelo link de produção (ex.: https://kw-importados.vercel.app).
+     Arquivos: index.html (canonical, og:url, og:image, twitter:image, JSON-LD),
+     robots.txt e sitemap.xml.
+     ===================================================================== -->
+<title>KW Importados | Xiaomi, iPhone e acessórios em Cianorte</title>
+<meta name="description" content="Loja física em Cianorte há 6 anos: Xiaomi, iPhone e Realme novos e seminovos com garantia, acessórios em geral e assistência técnica. Faça sua cotação.">
+<link rel="canonical" href="https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#111111">
+
+<!-- favicons (arquivos na raiz do projeto) -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="KW Importados">
+<meta property="og:title" content="KW Importados | Xiaomi, iPhone e acessórios em Cianorte">
+<meta property="og:description" content="Loja física em Cianorte há 6 anos: Xiaomi, iPhone e Realme novos e seminovos com garantia, acessórios em geral e assistência técnica.">
+<meta property="og:url" content="https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/">
+<meta property="og:image" content="https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo da KW Importados e a equipe da loja">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KW Importados | Xiaomi, iPhone e acessórios em Cianorte">
+<meta name="twitter:description" content="Loja física em Cianorte há 6 anos: Xiaomi, iPhone e Realme com garantia, acessórios e assistência técnica.">
+<meta name="twitter:image" content="https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/og-image.jpg">
+
+<link rel="preload" href="fonts/montserrat-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Dados estruturados: só com informações que aparecem no site.
+     CONFERIR: telefone e horário vieram da ficha da loja no Google. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobilePhoneStore",
+  "@id": "https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/#loja",
+  "name": "KW Importados",
+  "url": "https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/",
+  "image": "https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/og-image.jpg",
+  "logo": "https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/icon-512.png",
+  "description": "Loja física em Cianorte há mais de 6 anos com toda a linha Xiaomi e Apple, Realme, JBL, acessórios em geral e assistência técnica.",
+  "telephone": "+55 44 99757-8738",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida Atlântica, 630, Residencial Atlântico IV",
+    "addressLocality": "Cianorte",
+    "addressRegion": "PR",
+    "postalCode": "87200-286",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -23.6498459, "longitude": -52.6279813 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:15" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "16:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/kwimportadoss/"]
+}
+</script>
+<style>
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/montserrat-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/montserrat-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'Montserrat';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/montserrat-latin-800-normal.woff2) format('woff2')}@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/hanken-grotesk-latin-wght-normal.woff2) format('woff2')}
+/* Layout: preto da marca como chão, laranja do logo (em gradiente) como luz. */
+:root{
+  --ink:#111111;          /* preto do logo */
+  --ink-2:#181716;        /* superfície elevada */
+  --ink-3:#22201f;        /* borda/linha sobre preto */
+  --orange:#F7861E;       /* laranja do logo */
+  --orange-deep:#E2580C;  /* hover */
+  --orange-grad:linear-gradient(120deg,#FFB347 0%,#F7861E 48%,#E2580C 100%);
+  --paper:#F4EEEB;        /* cartão claro (JBL) */
+  --text:#F5F0ED;
+  --muted:#ABA29E;
+  --on-orange:#111111;
+  --display:"Montserrat","Gotham","Helvetica Neue",Arial,sans-serif;
+  --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  --max:1240px;
+  --r-s:10px;
+  --r-m:16px;
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{overflow-x:clip}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance;letter-spacing:-.025em}
+h2{font-size:clamp(1.85rem,3.7vw,3.05rem);font-weight:700}
+h3{font-size:clamp(1.15rem,1.7vw,1.4rem);font-weight:700}
+p{margin:0;text-wrap:pretty}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+.lede{color:var(--muted);max-width:58ch;font-size:1.0625rem}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 1.6em;border-radius:999px;font-family:var(--display);font-weight:700;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;-webkit-tap-highlight-color:transparent;user-select:none}
+.btn,.glass{--ga:.36;--gb:.14;color:#FFF2E6;border:1px solid rgba(247,134,30,.62);
+  background:linear-gradient(135deg,rgba(255,179,71,var(--ga)),rgba(247,134,30,calc(var(--ga) * .8)) 50%,rgba(226,88,12,var(--gb)));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.18),0 10px 28px -10px rgba(247,134,30,.45);
+  -webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.btn--solid{--ga:.5;--gb:.24}
+.btn--ghost{--ga:.16;--gb:.06}
+@media (hover:hover){
+  .btn:hover,.glass:hover{--ga:.58;--gb:.3;border-color:rgba(255,196,130,.9)}
+}
+/* leve sobressalto ao passar o mouse: botões e fotos */
+.btn,.glass,.mosaic figure,.trio figure,.owner figure{transition:transform .32s var(--ease-out),box-shadow .32s var(--ease-out),background-color .2s,border-color .2s,color .2s}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .btn:hover,.glass:not([disabled]):hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.36),inset 0 -1px 0 rgba(0,0,0,.18),0 16px 32px -12px rgba(247,134,30,.6)}
+  .slide:not(.is-active):hover{opacity:.7}
+  .mosaic figure:hover,.trio figure:hover,.owner figure:hover{transform:translateY(-6px);box-shadow:0 22px 40px -18px rgba(0,0,0,.75)}
+}
+.btn:active,.glass:active{transform:translateY(0) scale(.97)}
+.btn svg{width:1.1em;height:1.1em;flex:none}
+
+/* linha que sai da esquerda (da referência) */
+.lead-line{height:2px;width:min(44vw,560px);background:var(--orange-grad);margin-bottom:28px}
+.lead-line--ink{background:var(--ink)}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(17,17,17,.86);backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--ink-3)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.top__logo img{height:40px;width:auto}
+.top nav{display:flex;gap:clamp(18px,2.6vw,40px);margin-left:auto}
+.top nav a{font-family:var(--display);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--text);opacity:.82;padding:10px 0;transition:opacity .2s,color .2s}
+@media (hover:hover){.top nav a:hover{opacity:1;color:var(--orange)}}
+.top__cta{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 18px;border-radius:999px;font-family:var(--display);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:background-color .2s,color .2s}
+.top__cta svg{width:16px;height:16px}
+@media (max-width:940px){.top nav{display:none}.top__cta{margin-left:auto}}
+@media (max-width:380px){.top__logo img{height:28px}.top__cta{padding:0 12px;letter-spacing:.08em}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;border-bottom:1px solid var(--ink-3)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero .wrap{position:relative;padding-block:clamp(56px,9vw,120px) clamp(56px,8vw,104px);min-height:min(760px,calc(100svh - 72px));display:flex;flex-direction:column;justify-content:flex-end}
+.hero__meta{display:flex;align-items:center;gap:14px;margin-bottom:auto;padding-bottom:48px}
+.hero h1{font-size:clamp(2.2rem,6.2vw,5.4rem);font-weight:800;text-transform:uppercase;line-height:.98;letter-spacing:-.03em;max-width:12ch}
+.hero h1 em,.grad-text{font-style:normal;color:var(--orange);background:var(--orange-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero__sub{margin-top:22px;max-width:46ch;color:#D9D1CD;font-size:clamp(1.02rem,1.4vw,1.18rem)}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.bars{position:absolute;right:var(--gut-r);top:clamp(40px,6vw,72px);display:grid;gap:6px;width:56px}
+.bars i{display:block;background:var(--text);height:var(--h)}
+.dots4{display:grid;grid-template-columns:repeat(2,12px);gap:14px}
+.dots4 i{width:12px;height:12px;border-radius:50%;background:var(--text)}
+.hero .dots4{position:absolute;right:var(--gut-r);bottom:clamp(56px,8vw,104px)}
+@media (max-width:700px){.bars{width:40px;gap:5px}.hero .dots4{display:none}}
+
+/* ---------- faixa: pagamento + diferenciais ---------- */
+.band{background:var(--orange-grad);color:var(--on-orange)}
+.band .wrap{padding-block:clamp(36px,5vw,64px) clamp(28px,3.6vw,44px)}
+.pay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;align-items:end;gap:clamp(16px,3vw,48px)}
+.pay__item{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:clamp(12px,1.6vw,22px);align-items:end;min-width:0}
+.pay__item + .pay__item{padding-left:clamp(16px,3vw,48px);border-left:1.5px solid rgba(17,17,17,.25)}
+.pay__pre{grid-column:1 / -1;font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
+.pay__num{font-family:var(--display);font-weight:800;font-size:clamp(3.6rem,10vw,8.6rem);line-height:.82;letter-spacing:-.05em}
+.pay__where{font-family:var(--display);font-weight:700;font-size:clamp(1rem,1.9vw,1.6rem);line-height:1.1;letter-spacing:-.01em;padding-bottom:.3em;max-width:9ch}
+.btn--ink-glass{--ga:.0;--gb:.0;background:rgba(17,17,17,.88);border-color:rgba(17,17,17,.9);color:#FFF2E6}
+@media (hover:hover){.btn--ink-glass:hover{background:#111}}
+.perks{list-style:none;margin:clamp(28px,3.4vw,44px) 0 0;padding:clamp(18px,2vw,24px) 0 0;border-top:1.5px solid rgba(17,17,17,.25);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px clamp(16px,3vw,48px)}
+.perks li{display:grid;gap:2px;min-width:0}
+.perks b{font-family:var(--display);font-weight:800;font-size:1.02rem;text-transform:uppercase;letter-spacing:.02em}
+.perks span{font-weight:500;font-size:.96rem}
+@media (max-width:900px){
+  .pay{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .pay__cta{grid-column:1 / -1;justify-self:start}
+  .pay__item{grid-template-columns:minmax(0,1fr)}
+  .perks{grid-template-columns:minmax(0,1fr)}
+}
+
+/* faixa de marcas: células iguais, logos com peso visual equilibrado */
+.brands{background:var(--ink-2);border-block:1px solid var(--ink-3)}
+.brands .wrap{padding-block:clamp(28px,3.6vw,44px);display:grid;gap:clamp(18px,2.4vw,28px);justify-items:center}
+.brands .eyebrow{margin:0}
+.brands__row{list-style:none;margin:0;padding:0;width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(8px,1vw,14px)}
+.brand{height:clamp(84px,8vw,104px);display:grid;place-items:center;border-radius:var(--r-m);border:1px solid rgba(247,134,30,.18);
+  background:linear-gradient(135deg,rgba(255,179,71,.07),rgba(247,134,30,.02) 60%,rgba(226,88,12,.05));transition:transform .32s var(--ease-out),border-color .25s}
+.brand svg{height:var(--h);width:auto;max-width:72%;display:block}
+.brand--word span{font-family:var(--display);line-height:1;background:var(--orange-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--orange)}
+.brand--holly span{font-weight:700;font-size:clamp(1.05rem,1.5vw,1.4rem);letter-spacing:-.02em}
+.brand--star span{font-weight:600;font-size:clamp(.82rem,1.15vw,1.08rem);letter-spacing:.32em;margin-right:-.32em}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.brand:hover{transform:translateY(-4px);border-color:rgba(247,134,30,.55)}}
+@media (max-width:900px){.brands__row{grid-template-columns:repeat(3,minmax(0,1fr))}.brand svg{height:calc(var(--h) * .85)}}
+
+/* ---------- seções ---------- */
+.sec{padding-block:clamp(72px,10vw,136px)}
+.sec--alt{background:var(--ink-2)}
+.head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px 56px;align-items:end;margin-bottom:clamp(32px,4.4vw,56px)}
+.head > div{display:grid;gap:16px;min-width:0}
+@media (max-width:860px){.head{grid-template-columns:minmax(0,1fr)}}
+
+/* mosaico: todas as fotos de um bloco com a mesma proporção; a maior ocupa 2x2 */
+.mosaic{display:grid;gap:clamp(8px,1vw,14px);grid-template-columns:repeat(var(--cols),minmax(0,1fr))}
+.mosaic figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-s);background:var(--ink-3);aspect-ratio:var(--r)}
+.mosaic figure.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease-out)}
+@media (hover:hover){.mosaic figure:hover img{transform:scale(1.035)}}
+.mosaic figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 12px;background:linear-gradient(to top,rgba(10,10,10,.82),rgba(10,10,10,0));font-size:.86rem;line-height:1.35;color:#fff}
+.mosaic figcaption b{display:block;font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:.02em}
+.mosaic--3{--cols:3;--r:1/1}
+@media (max-width:760px){
+  .mosaic--3{--cols:2}
+  .mosaic figure.big{grid-row:auto;aspect-ratio:var(--r)}
+  .mosaic figcaption{padding:36px 10px 9px;font-size:.78rem}
+  .mosaic figcaption b{font-size:.9rem}
+}
+
+/* aparelhos */
+.guarantee{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.seal{display:inline-flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border:1.5px solid var(--orange);border-radius:999px}
+.seal i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--orange-grad);color:var(--ink)}
+.seal i svg{width:18px;height:18px}
+.seal span{font-family:var(--display);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.92rem;line-height:1.2}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;padding:0;list-style:none}
+.chips li{font-family:var(--display);font-weight:600;font-size:.86rem;letter-spacing:.06em;padding:8px 14px;border-radius:999px;background:var(--ink-3);color:var(--text);white-space:nowrap}
+.chips li.x{background:transparent;border:1px solid #3a3634}
+.ref{position:relative;overflow:hidden;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(20px,3vw,48px);align-items:center;margin-top:clamp(36px,5vw,64px);padding:clamp(26px,3.4vw,44px);border-radius:var(--r-m);border:1px solid rgba(247,134,30,.55);background:radial-gradient(120% 140% at 0% 0%,rgba(247,134,30,.22),rgba(247,134,30,.04) 55%,rgba(247,134,30,0)),var(--ink-2)}
+.ref::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(247,134,30,.18);box-shadow:0 0 0 40px rgba(247,134,30,.04),0 0 0 80px rgba(247,134,30,.025);pointer-events:none}
+.ref__big{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:14px;align-items:end}
+.ref__big svg{grid-row:1 / 3;width:clamp(44px,5vw,64px);height:clamp(44px,5vw,64px);color:var(--orange);align-self:center}
+.ref__big b{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.4vw,4.4rem);line-height:.9;letter-spacing:-.04em;color:var(--orange);text-transform:uppercase}
+.ref__big span{font-family:var(--display);font-weight:700;font-size:clamp(.9rem,1.3vw,1.1rem);letter-spacing:.14em;text-transform:uppercase}
+.ref__text{color:#D9D1CD;max-width:40ch}
+.ref__list{list-style:none;margin:0;padding:0;display:grid;gap:10px;position:relative;z-index:1}
+.ref__list li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.96rem;white-space:nowrap}
+.ref__list li::before{content:"";width:18px;height:18px;flex:none;border-radius:50%;background:var(--orange) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23111' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='m6 12.5 4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+@media (max-width:980px){.ref{grid-template-columns:minmax(0,1fr)}.ref__list li{white-space:normal}}
+
+/* carrossel: foto da vez centralizada e em destaque, vizinhas esmaecidas */
+.rail-wrap{position:relative}
+.rail{--sw:min(80vw,620px);--g:clamp(12px,1.6vw,22px);display:grid;grid-auto-flow:column;grid-auto-columns:var(--sw);gap:var(--g);
+  width:var(--vw,100vw);margin-left:calc(50% - var(--vw,100vw) / 2);padding:18px calc((var(--vw,100vw) - var(--sw)) / 2) 30px;
+  overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding-inline:calc((var(--vw,100vw) - var(--sw)) / 2)}
+.rail::-webkit-scrollbar{display:none}
+.rail:focus-visible{outline-offset:-4px}
+.slide{scroll-snap-align:center;scroll-snap-stop:always;margin:0;position:relative;border-radius:var(--r-m);overflow:hidden;aspect-ratio:3/2;background:var(--ink-3);max-width:100%;
+  opacity:.42;transform:scale(.9);filter:saturate(.6);transition:opacity .45s var(--ease-out),transform .45s var(--ease-out),filter .45s var(--ease-out),box-shadow .45s var(--ease-out)}
+.slide.is-active{opacity:1;transform:none;filter:none;box-shadow:0 0 0 2px var(--orange),0 30px 60px -28px rgba(247,134,30,.55)}
+.slide img{width:100%;height:100%;object-fit:cover}
+@media (prefers-reduced-motion:reduce){.slide{transition:none}}
+.slide figcaption{opacity:0;transition:opacity .3s;position:absolute;left:14px;top:14px;font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(17,17,17,.78);color:var(--text)}
+.slide.is-active figcaption{opacity:1}
+.rail-ctrl{display:flex;align-items:center;justify-content:center;gap:clamp(16px,2vw,24px);margin-top:4px}
+.rail-ctrl button{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.rail-ctrl button[disabled]{opacity:.3;cursor:default}
+.rail-ctrl svg{width:20px;height:20px}
+.pager{display:flex;gap:8px}
+.pager i{width:8px;height:8px;border-radius:99px;background:#4a4442;transition:width .35s var(--ease-out),background-color .25s}
+.pager i.on{width:26px;background:var(--orange-grad)}
+
+@media (hover:hover){.grid8 figure:hover img{transform:scale(1.035)}}
+
+/* split: texto + mosaico */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:center}
+.split--rev{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.split--rev .split__text{order:2}
+.split__text{display:grid;gap:18px;min-width:0}
+@media (max-width:900px){.split,.split--rev{grid-template-columns:minmax(0,1fr)}.split--rev .split__text{order:0}}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+
+.mosaic--jbl figure{background:#fff}
+.mosaic--jbl img{object-fit:contain;padding:12%}
+.mosaic--jbl figure.big img{padding:10% 8%}
+
+/* laboratório */
+.svc{list-style:none;margin:0 0 clamp(36px,5vw,64px);padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(10px,1.2vw,14px)}
+.svc li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 18px;border-radius:var(--r-m);min-width:0;
+  border:1px solid rgba(247,134,30,.22);
+  background:linear-gradient(135deg,rgba(255,179,71,.10),rgba(247,134,30,.04) 55%,rgba(226,88,12,.07)),rgba(255,255,255,.015);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+  -webkit-backdrop-filter:blur(14px) saturate(150%);backdrop-filter:blur(14px) saturate(150%);
+  transition:transform .32s var(--ease-out),border-color .25s,background-color .25s,box-shadow .32s var(--ease-out)}
+.svc__ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#FFE6CC;
+  background:linear-gradient(135deg,rgba(255,179,71,.42),rgba(226,88,12,.18));border:1px solid rgba(247,134,30,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.28)}
+.svc__ico svg{width:24px;height:24px}
+.svc li b{font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:.01em;display:block}
+.svc li small{color:var(--muted);font-size:.9rem;display:block;line-height:1.45;margin-top:2px}
+.svc__chev{width:20px;height:20px;color:var(--orange);transition:transform .32s var(--ease-out)}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .svc li:hover{transform:translateY(-3px);border-color:rgba(247,134,30,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 16px 32px -16px rgba(247,134,30,.45)}
+  .svc li:hover .svc__chev{transform:translateX(3px)}
+}
+@media (max-width:760px){.svc{grid-template-columns:minmax(0,1fr)}.svc li{padding:14px}.svc__ico{width:42px;height:42px}}
+
+
+/* equipe */
+.owner{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(16px,2.4vw,32px);align-items:stretch}
+.owner figure{margin:0;border-radius:var(--r-m);overflow:hidden;background:var(--ink-3)}
+.owner figure img{width:100%;height:100%;object-fit:cover}
+.quote{margin:0;padding-left:18px;border-left:3px solid var(--orange);max-width:44ch !important;font-family:var(--display);font-weight:600;font-size:clamp(1.08rem,1.6vw,1.35rem);line-height:1.4;color:var(--text);max-width:36ch;letter-spacing:-.01em}
+.owner__facts{list-style:none;margin:4px 0 0;padding:20px 0 0;border-top:1px solid var(--ink-3);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.owner__facts li{display:grid;gap:4px;min-width:0}
+.owner__facts b{font-family:var(--display);font-weight:800;font-size:clamp(1.15rem,1.7vw,1.5rem);line-height:1;letter-spacing:-.03em}
+.owner__facts span{font-size:.88rem;color:var(--muted);line-height:1.35}
+.owner .ceo{aspect-ratio:1/1;max-width:560px;justify-self:end;width:100%}
+.owner__text{display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0}
+.owner__text .name{font-family:var(--display);font-weight:800;letter-spacing:-.035em;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1;text-transform:uppercase}
+.owner__text .role{font-family:var(--display);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.82rem;color:var(--orange)}
+@media (max-width:760px){.owner{grid-template-columns:minmax(0,1fr)}.owner .ceo{max-width:520px}}
+
+/* contato */
+.contact{background:var(--orange-grad);color:var(--on-orange)}
+.contact .eyebrow{color:var(--ink)}
+.contact .lede{color:#2a1606}
+.channels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,18px)}
+.channel{display:grid;grid-template-rows:auto 1fr auto;gap:14px;padding:clamp(22px,2.4vw,30px);border-radius:var(--r-m);background:var(--ink);color:var(--text);text-decoration:none;min-height:230px;transition:transform .25s var(--ease-out),background-color .2s}
+.channel__icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--orange-grad);color:var(--ink)}
+.channel__icon svg{width:24px;height:24px}
+.channel h3{font-size:clamp(1.15rem,1.6vw,1.4rem);text-transform:uppercase;font-weight:800}
+.channel p{color:var(--muted);font-size:.96rem;margin-top:6px}
+.channel__go{display:flex;align-items:center;justify-content:space-between;font-family:var(--display);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem;color:var(--orange);padding-top:14px;border-top:1px solid var(--ink-3)}
+.channel__go svg{width:20px;height:20px;transition:transform .25s var(--ease-out)}
+@media (hover:hover){.channel:hover{transform:translateY(-4px)}.channel:hover .channel__go svg{transform:translateX(4px)}}
+.channel:active{transform:scale(.985)}
+@media (max-width:860px){.channels{grid-template-columns:minmax(0,1fr)}.channel{min-height:0}}
+
+.mapbox{margin-top:clamp(14px,1.6vw,20px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);border-radius:var(--r-m);overflow:hidden;background:var(--ink)}
+.map{position:relative;height:clamp(340px,44vw,480px);background:#0d0d0d;z-index:0}
+.mapinfo{display:flex;flex-direction:column;gap:18px;padding:clamp(22px,2.6vw,32px);color:var(--text)}
+.mapinfo address{font-style:normal;font-size:1.06rem;line-height:1.5}
+.mapinfo address b{font-family:var(--display);font-weight:700;font-size:1.3rem;display:block;margin-bottom:4px}
+.mapinfo .btns{display:grid;gap:10px;margin-top:auto}
+.mapinfo .btn{width:100%}
+@media (max-width:860px){.mapbox{grid-template-columns:minmax(0,1fr)}}
+
+
+/* rodapé */
+.foot{padding-block:56px calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--ink-3)}
+.foot .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));gap:32px}
+.foot img{height:44px;width:auto}
+.foot h4{margin:0 0 10px;font-family:var(--display);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:var(--orange)}
+.foot p,.foot a{color:#CFC7C3;font-size:.95rem;text-decoration:none}
+.foot a{display:block;padding:4px 0}
+@media (hover:hover){.foot a:hover{color:var(--orange)}}
+.foot .copy{grid-column:1 / -1;color:#7f7774;font-size:.82rem;padding-top:24px;border-top:1px solid var(--ink-3)}
+@media (max-width:860px){.foot .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.foot .wrap > div:first-child{grid-column:1 / -1}}
+@media (max-width:420px){.foot .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* ===== KW Importados: ajustes de marca ===== */
+/* títulos e destaques em gradiente laranja */
+.eyebrow{background:var(--orange-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;width:fit-content}
+.contact .eyebrow{background:none;-webkit-text-fill-color:var(--ink)}
+h2 em,.owner__text .name em{font-style:normal;color:var(--orange);background:var(--orange-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.contact h2 em{background:none;-webkit-text-fill-color:var(--ink);color:var(--ink);text-decoration:underline;text-decoration-thickness:.08em;text-underline-offset:.12em}
+
+/* botões de ação em gradiente sólido */
+.btn--solid,.cta-grad{--ga:0;--gb:0;color:#111;border:1px solid rgba(255,196,130,.55);background:var(--orange-grad);background-size:160% 100%;background-position:0 0;text-shadow:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 12px 30px -12px rgba(247,134,30,.7);transition:transform .32s var(--ease-out),box-shadow .32s var(--ease-out),background-position .45s var(--ease-out)}
+@media (hover:hover){.btn--solid:hover,.cta-grad:hover{background:var(--orange-grad);background-size:160% 100%;background-position:100% 0;border-color:rgba(255,214,170,.9)}}
+.btn:focus-visible,.cta-grad:focus-visible{outline:2px solid #FFD3A1;outline-offset:3px}
+.top__cta{min-height:44px}
+
+/* duas fotos menores do mesmo tamanho + uma maior */
+.trio{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:clamp(8px,1vw,14px)}
+.trio figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-s);background:var(--ink-3);aspect-ratio:3/4}
+.trio figure.big{grid-row:1 / 3;aspect-ratio:auto}
+.trio figure.big img{position:absolute;inset:0}
+.trio img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease-out)}
+@media (hover:hover){.trio figure:hover img{transform:scale(1.035)}}
+.trio figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 12px 10px;background:linear-gradient(to top,rgba(10,10,10,.82),rgba(10,10,10,0));font-size:.84rem;line-height:1.35;color:#fff}
+.trio figcaption b{display:block;font-family:var(--display);font-weight:700;font-size:.98rem;letter-spacing:.02em}
+@media (max-width:600px){
+  .trio{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .trio figure.big{grid-row:auto;grid-column:1 / -1;aspect-ratio:4/5}
+  .trio figcaption{padding:32px 10px 8px;font-size:.78rem}
+}
+
+/* carrossel de celulares: retrato */
+.rail--cel{--sw:min(66vw,340px)}
+.slide--tall{aspect-ratio:3/4;border-radius:var(--r-m)}
+
+/* foto em destaque (acessórios) */
+.feature{margin:0;position:relative;border-radius:var(--r-m);overflow:hidden;background:var(--ink-3);aspect-ratio:3/4;max-width:460px;width:100%;justify-self:center;box-shadow:0 0 0 1px rgba(247,134,30,.35),0 40px 80px -40px rgba(247,134,30,.55)}
+.feature img{width:100%;height:100%;object-fit:cover}
+.feature figcaption{position:absolute;left:14px;bottom:14px;font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:rgba(17,17,17,.8)}
+
+/* cards de lista (acessórios e assistência) */
+.svc--2{grid-template-columns:repeat(2,minmax(0,1fr));margin:6px 0 0}
+.svc--2 li{grid-template-columns:auto minmax(0,1fr);gap:12px;padding:12px}
+.svc--2 .svc__ico{width:40px;height:40px;border-radius:10px}
+.svc--2 .svc__ico svg{width:21px;height:21px}
+.svc--2 li b{font-size:.94rem;line-height:1.25}
+@media (max-width:760px){.svc--2{grid-template-columns:repeat(2,minmax(0,1fr))}.svc--2 li{padding:11px;gap:10px}}
+@media (max-width:360px){.svc--2 li{grid-template-columns:minmax(0,1fr)}}
+.svc--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.svc--4 li{grid-template-columns:auto minmax(0,1fr)}
+@media (max-width:980px){.svc--4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.svc--4 li{grid-template-columns:minmax(0,1fr);gap:10px;padding:14px}}
+.note{color:var(--muted);font-size:.92rem}
+
+/* localização: fachada + mapa lado a lado */
+.locbox{margin-top:clamp(14px,1.6vw,20px);border-radius:var(--r-m);overflow:hidden;background:var(--ink)}
+.locbox__media{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.locbox__photo{margin:0;position:relative;min-height:clamp(300px,36vw,460px)}
+.locbox__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.map{position:relative;display:block;min-height:clamp(300px,36vw,460px);height:auto;overflow:hidden;color:var(--text);text-decoration:none;
+  background:linear-gradient(rgba(247,134,30,.07) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,rgba(247,134,30,.07) 1px,transparent 1px) 0 0/40px 40px,#0d0d0d}
+.map__svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.map__attr{position:absolute;right:12px;top:14px;z-index:2;font-size:.7rem;color:#8f8681}
+.map__pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);z-index:3;pointer-events:none;filter:drop-shadow(0 0 18px rgba(247,134,30,.45))}
+.map__label{position:absolute;left:12px;top:12px;z-index:2;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(17,17,17,.86);font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.map__label svg{width:14px;height:14px}
+.map__open{position:absolute;right:12px;bottom:12px;z-index:2;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;min-height:44px;border-radius:999px;background:var(--orange-grad);color:#111;font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 10px 24px -10px rgba(0,0,0,.7)}
+.map__open svg{width:16px;height:16px}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.map:hover .map__open{transform:translateY(-2px)}}
+.map__open{transition:transform .3s var(--ease-out)}
+.locinfo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,2.6vw,36px);padding:clamp(22px,2.6vw,32px);color:var(--text);align-items:start}
+.locinfo address{font-style:normal;font-size:1.02rem;line-height:1.5}
+.locinfo address b,.hours b{font-family:var(--display);font-weight:700;font-size:1.2rem;display:block;margin-bottom:6px}
+.hours dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;font-size:1rem}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;font-weight:600}
+.hours dd.off{color:var(--muted);font-weight:500}
+.locinfo .btns{display:grid;gap:10px}
+.locinfo .btn{width:100%}
+@media (max-width:980px){.locinfo{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.locinfo .btns{grid-column:1 / -1;grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){.locbox__media{grid-template-columns:minmax(0,1fr)}.locbox__photo{min-height:0;aspect-ratio:4/3}.map{min-height:320px}.locinfo{grid-template-columns:minmax(0,1fr)}.locinfo .btns{grid-template-columns:minmax(0,1fr)}}
+
+/* pino 3D laranja pulsando */
+.pin{position:relative;width:56px;height:70px}
+.pin__ring{position:absolute;left:50%;bottom:0;width:22px;height:9px;margin-left:-11px;margin-bottom:-4px;border-radius:50%;border:2px solid var(--orange);opacity:0;animation:ring 2.4s cubic-bezier(.2,.6,.3,1) infinite}
+.pin__ring:nth-child(2){animation-delay:.8s}
+.pin__ring:nth-child(3){animation-delay:1.6s}
+.pin__shadow{position:absolute;left:50%;bottom:-3px;width:22px;height:7px;margin-left:-11px;border-radius:50%;background:radial-gradient(rgba(0,0,0,.65),rgba(0,0,0,0) 70%);animation:shadow 2.4s ease-in-out infinite}
+.pin__body{position:absolute;left:50%;top:2px;width:44px;height:44px;margin-left:-22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+  background:radial-gradient(circle at 32% 28%,#FFE6CC 0,#FFB347 18%,#F7861E 44%,#D9620F 78%,#9C3F06 100%);
+  box-shadow:inset -5px -5px 10px rgba(80,35,5,.45),inset 3px 3px 6px rgba(255,255,255,.35),0 10px 18px rgba(0,0,0,.55);
+  animation:bob 2.4s ease-in-out infinite}
+.pin__body::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#3a3533,#111 70%);box-shadow:inset 0 2px 3px rgba(0,0,0,.7),0 1px 0 rgba(255,255,255,.3)}
+@keyframes ring{0%{transform:scale(.4);opacity:.95}100%{transform:scale(4.2);opacity:0}}
+@keyframes bob{0%,100%{transform:rotate(-45deg) translate(0,0)}50%{transform:rotate(-45deg) translate(3px,-3px)}}
+@keyframes shadow{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.8);opacity:.7}}
+@media (prefers-reduced-motion:reduce){.pin__ring{animation:none;opacity:.5;transform:scale(2)}.pin__body,.pin__shadow{animation:none}}
+
+.brands__row{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.brands__row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.brand--realme span{font-weight:800;font-size:clamp(1.25rem,1.9vw,1.7rem);letter-spacing:-.02em;text-transform:lowercase}
+.foot .hours-mini{color:#CFC7C3;font-size:.95rem}
+
+/* assistência: arte à direita com brilho laranja */
+.repair{align-items:center}
+.repair__art{margin:0;position:relative;justify-self:center;width:100%;max-width:460px}
+.repair__art::before{content:"";position:absolute;inset:12% 6% 8%;border-radius:50%;background:radial-gradient(closest-side,rgba(247,134,30,.42),rgba(247,134,30,0));filter:blur(18px);z-index:0}
+.repair__art img{position:relative;z-index:1;width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+@media (max-width:900px){.repair__art{order:-1;max-width:300px}}
+
+/* clientes */
+.reviews{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:center}
+.reviews__pics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1vw,14px)}
+.reviews__pics figure{margin:0;aspect-ratio:1/1;border-radius:var(--r-m);overflow:hidden;background:var(--ink-3);transition:transform .32s var(--ease-out),box-shadow .32s var(--ease-out)}
+.reviews__pics figure:nth-child(2){transform:translateY(clamp(16px,3vw,40px))}
+.reviews__pics img{width:100%;height:100%;object-fit:cover}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){.reviews__pics figure:hover{box-shadow:0 0 0 2px var(--orange),0 24px 40px -20px rgba(247,134,30,.55)}}
+.stars{display:inline-flex;align-items:center;gap:14px;padding:12px 18px;border-radius:999px;border:1.5px solid rgba(247,134,30,.6);width:fit-content;flex-wrap:wrap}
+.stars__row{display:inline-flex;gap:4px}
+.stars__row svg{width:22px;height:22px}
+.stars__txt{font-family:var(--display);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.86rem}
+.stars__txt b{font-weight:800;font-size:1.2rem;letter-spacing:-.02em;margin-right:4px}
+@media (max-width:900px){.reviews{grid-template-columns:minmax(0,1fr)}.reviews__pics figure:nth-child(2){transform:none}}
+
+.foot__h{margin:0 0 10px;font-family:var(--display);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;color:var(--orange)}
+.foot .wrap > div:first-child a{display:inline-block}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <linearGradient id="orange-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB347"/><stop offset=".5" stop-color="#F7861E"/><stop offset="1" stop-color="#E2580C"/></linearGradient>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.34A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.150l-.3-.18-3.03.8.8-2.95-.2-.3a8.2 8.2 0 1 1 6.93 3.78Zm4.5-6.14c-.25-.12-1.46-.72-1.690-.8-.23-.09-.39-.13-.55.12-.17.24-.64.8-.78.96-.14.17-.29.19-.53.07a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42l-.75-1.82c-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.7 2.7 0 0 0-.85 2.020 4.7 4.7 0 0 0 1 2.5 10.8 10.8 0 0 0 4.13 3.65c1.54.66 2.14.72 2.91.6.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.14-1.17-.06-.11-.22-.17-.47-.29Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.3-7-11.5a7 7 0 0 1 14 0C19 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Zm-3.2 9.2 2.2 2.2 4.4-4.6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="url(#orange-g)" d="m12 2.6 2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8L12 2.6Z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="top__logo" href="#inicio" aria-label="KW Importados, voltar ao início"><img src="img/logo.png" alt="KW Importados" width="335" height="120"></a>
+    <nav aria-label="Seções">
+      <a href="#aparelhos">Celulares</a>
+      <a href="#acessorios">Acessórios</a>
+      <a href="#assistencia">Assistência</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Localização</a>
+    </nav>
+    <a class="top__cta cta-grad" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Cotação</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-labelledby="h-hero">
+    <canvas id="mesh" aria-hidden="true"></canvas>
+    <div class="bars" aria-hidden="true"><i style="--h:14px"></i><i style="--h:12px"></i><i style="--h:11px"></i><i style="--h:9px"></i><i style="--h:8px"></i><i style="--h:6px"></i><i style="--h:5px"></i><i style="--h:4px"></i><i style="--h:3px"></i><i style="--h:2px"></i></div>
+    <div class="wrap">
+      <div class="hero__meta"><span class="eyebrow">Cianorte · Paraná</span></div>
+      <h1 id="h-hero">Xiaomi e iPhone com <em>loja física</em> em Cianorte</h1>
+      <p class="hero__sub">Há mais de 6 anos na Avenida Atlântica. Toda a linha Xiaomi e Apple, Realme, JBL, acessórios em geral e assistência técnica.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Faça sua cotação</a>
+        <a class="btn btn--ghost" href="#aparelhos">Ver celulares</a>
+      </div>
+    </div>
+    <div class="dots4" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <section class="band" aria-label="Diferenciais da loja">
+    <div class="wrap">
+      <div class="pay">
+        <div class="pay__item">
+          <span class="pay__pre">Há mais de</span>
+          <b class="pay__num">6</b>
+          <span class="pay__where">anos de loja física</span>
+        </div>
+        <div class="pay__item">
+          <span class="pay__pre">Avenida Atlântica</span>
+          <b class="pay__num">630</b>
+          <span class="pay__where">Cianorte, Paraná</span>
+        </div>
+        <a class="pay__cta btn btn--ink-glass" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Faça sua cotação</a>
+      </div>
+      <ul class="perks">
+        <li><b>Novos e seminovos</b><span>celulares com garantia</span></li>
+        <li><b>Acessórios em geral</b><span>capas, películas, fones e mais</span></li>
+        <li><b>Assistência técnica</b><span>para o seu aparelho</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="brands" aria-labelledby="h-brands">
+    <div class="wrap">
+      <h2 class="eyebrow" id="h-brands">Marcas que você encontra aqui</h2>
+      <ul class="brands__row">
+        <li class="brand" style="--h:54px"><svg viewBox="2.20 -0.02 19.59 24.04" role="img" aria-label="Apple"><path fill="url(#orange-g)" d="M12.152 6.896c-.948 0-2.415-1.078-3.960-1.040-2.040.027-3.910 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.090 1.013 1.454 2.208 3.090 3.792 3.039 1.520-.065 2.090-.987 3.935-.987 1.831 0 2.350.987 3.960.948 1.637-.026 2.676-1.480 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.220-4.857-.026-3.040 2.480-4.494 2.597-4.559-1.429-2.090-3.623-2.324-4.390-2.376-2-.156-3.675 1.090-4.610 1.090zM15.530 3.830c.843-1.012 1.400-2.427 1.245-3.830-1.207.052-2.662.805-3.532 1.818-.780.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg></li>
+        <li class="brand" style="--h:48px"><svg viewBox="-0.02 -0.02 24.04 24.04" role="img" aria-label="Xiaomi"><path fill="url(#orange-g)" d="M12 0C8.016 0 4.756.255 2.493 2.516.23 4.776 0 8.033 0 12.012c0 3.980.23 7.235 2.494 9.497C4.757 23.770 8.017 24 12 24c3.983 0 7.243-.23 9.506-2.491C23.770 19.247 24 15.990 24 12.012c0-3.984-.233-7.243-2.502-9.504C19.234.252 15.978 0 12 0zM4.906 7.405h5.624c1.470 0 3.007.068 3.764.827.746.746.827 2.233.830 3.676v4.540a.15.15 0 0 1-.152.147h-1.947a.15.15 0 0 1-.152-.148V11.830c-.002-.806-.048-1.634-.464-2.051-.358-.360-1.026-.441-1.720-.458H7.158a.15.15 0 0 0-.151.147v6.980a.15.15 0 0 1-.152.148H4.906a.15.15 0 0 1-.150-.148V7.554a.15.15 0 0 1 .150-.149zm12.131 0h1.949a.15.15 0 0 1 .150.150v8.892a.15.15 0 0 1-.150.148h-1.949a.15.15 0 0 1-.151-.148V7.554a.15.15 0 0 1 .151-.149zM8.920 10.948h2.046c.083 0 .150.066.150.147v5.352a.15.15 0 0 1-.150.148H8.920a.15.15 0 0 1-.152-.148v-5.352a.15.15 0 0 1 .152-.147Z"/></svg></li>
+        <li class="brand brand--word brand--realme" aria-label="Realme"><span aria-hidden="true">realme</span></li>
+        <li class="brand" style="--h:40px"><svg viewBox="-0.02 5.24 24.04 13.51" role="img" aria-label="JBL"><path fill="url(#orange-g)" d="M0 5.2645l2.0221 4.5892 2.0217-4.5892zm2.0221 7.601c.6982 0 1.2656-.5655 1.2656-1.2606 0-.6985-.5674-1.2618-1.2656-1.2618-.7003 0-1.2661.5633-1.2661 1.2618 0 .6951.5658 1.2607 1.2661 1.2607zm-1.0937 3.361c0 .9572.862 2.509 3.3142 2.509 2.4529 0 3.3154-1.1872 3.3154-2.509V5.2645H5.3693l.0011 11.3428c0 .6196-.5037 1.1392-1.1261 1.1392-.6231 0-1.1279-.5045-1.1279-1.124l-.0016-2.3108H.9284zm8.2885 2.3119V5.2645h4.3745c.8441 0 2.187.693 2.187 2.1628v2.2611c0 .6612-.5798 1.8328-1.4412 1.8328.8614 0 1.4412.7422 1.4412 1.3045v3.9788c0 .6767-.5463 1.7339-2.187 1.7339zm3.3802-7.559c.7955 0 .9944-.134.9944-2.2147 0-2.0801-.199-2.246-.9944-2.246h-1.1948v4.4575zm.9944 3.8108c0-2.0812 0-2.6906-.8636-2.6906h-1.3256v5.3482l1.3255.0027c.8636 0 .8636-.5807.8636-2.6603zm3.779 3.7482H24v-4.2267h-2.1886l.0016 2.3107c0 .6196-.5047 1.1241-1.1273 1.1241-.622 0-1.1273-.5045-1.1273-1.124V5.2644h-2.188Z"/></svg></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="aparelhos" aria-labelledby="h-ap">
+    <div class="lead-line" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="split">
+        <div class="split__text">
+          <span class="eyebrow">Celulares</span>
+          <h2 id="h-ap">Celulares <em>novos e seminovos</em>, com garantia.</h2>
+          <p class="lede">Xiaomi, iPhone e Realme na nossa loja física em Cianorte. Diga o modelo, a cor e a memória que você procura e receba sua cotação.</p>
+          <div class="guarantee">
+            <span class="seal"><i><svg aria-hidden="true"><use href="#i-shield"/></svg></i><span>Celulares com garantia</span></span>
+          </div>
+          <ul class="chips" aria-label="O que você encontra">
+            <li>Xiaomi</li><li>iPhone</li><li>Realme</li><li class="x">Novos</li><li class="x">Seminovos</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20de%20celular." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Cotar meu celular</a>
+          </div>
+        </div>
+        <div class="trio">
+          <figure class="big"><img src="img/ap-iphones.webp" width="287" height="510" sizes="(max-width:600px) 100vw, 40vw" alt="Mão segurando quatro caixas de iPhone lacradas, uma azul e três laranja" loading="lazy" decoding="async" style="object-position:50% 45%"><figcaption><b>iPhone</b>Lacrados, na loja</figcaption></figure>
+          <figure><img src="img/ap-fachada.webp" width="382" height="510" alt="Interior da KW Importados com balcão, vitrine de celulares e parede de capas" loading="lazy" decoding="async"><figcaption><b>Loja física</b>KW Importados</figcaption></figure>
+          <figure><img src="img/ap-xiaomi.webp" width="382" height="510" alt="Xiaomi lilás segurado na mão, mostrando as câmeras traseiras" loading="lazy" decoding="async"><figcaption><b>Xiaomi</b>Toda a linha</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="ref">
+        <div class="ref__big"><svg aria-hidden="true"><use href="#i-shield"/></svg><b class="grad-text">Garantia</b><span>em cada celular</span></div>
+        <p class="ref__text">Novo ou seminovo, Xiaomi, iPhone ou Realme: você compra numa loja física que está há mais de 6 anos em Cianorte e sabe onde nos encontrar.</p>
+        <ul class="ref__list">
+          <li>Celulares novos</li>
+          <li>Seminovos com garantia</li>
+          <li>Xiaomi, iPhone e Realme</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="novos" aria-labelledby="h-novos">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Direto da loja</span>
+          <h2 id="h-novos">Seu celular novo <em>te espera aqui</em>.</h2>
+        </div>
+        <p class="lede">iPhone, Redmi e Poco que passaram pelo nosso balcão. Pergunte o que chegou esta semana.</p>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail rail--cel" id="rail" tabindex="0" aria-label="Fotos de celulares da loja, role para o lado">
+          <figure class="slide slide--tall"><img src="img/ce-01.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="iPhone Pro grafite em um suporte sobre o balcão da loja" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-02.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Caixa lacrada de iPhone segurada na mão" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-03.webp" width="287" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Redmi 15C azul ao lado da caixa, na prateleira da loja" loading="lazy" decoding="async"><figcaption>Redmi</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-04.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Caixa de iPhone laranja em frente à fachada da KW Importados" loading="lazy" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-05.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Redmi Note 11 Pro 5G cinza no suporte, ao lado da caixa" loading="lazy" decoding="async"><figcaption>Redmi</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-06.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Redmi Note 11 Pro+ 5G azul degradê no suporte, ao lado da caixa" loading="lazy" decoding="async"><figcaption>Redmi</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-07.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Caixa de iPhone e carregador USB-C 20W da Apple em frente ao logo da KW Importados" loading="lazy" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-08.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Duas caixas de iPhone, azul e branca, seguradas na mão" loading="lazy" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-09.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Redmi azul-claro segurado na mão" loading="lazy" decoding="async"><figcaption>Redmi</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-10.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="iPhone verde segurado em frente à fachada da KW Importados" loading="lazy" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-11.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="iPhone branco segurado em frente ao logo da KW Importados" loading="lazy" decoding="async"><figcaption>iPhone</figcaption></figure>
+          <figure class="slide slide--tall"><img src="img/ce-12.webp" width="382" height="510" sizes="(max-width:760px) 66vw, 340px" alt="Poco preto em um suporte sobre a mesa" loading="lazy" decoding="async"><figcaption>Poco</figcaption></figure>
+        </div>
+        <div class="rail-ctrl" data-for="rail">
+          <button class="glass" type="button" data-prev aria-label="Foto anterior"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+          <div class="pager" aria-hidden="true"></div>
+          <button class="glass" type="button" data-next aria-label="Próxima foto"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="loja" aria-labelledby="h-loja">
+    <div class="lead-line" aria-hidden="true"></div>
+    <div class="wrap split split--rev">
+      <div class="split__text">
+        <span class="eyebrow">Estrutura da loja</span>
+        <h2 id="h-loja">Uma loja física <em>completa</em>, para ver antes de comprar.</h2>
+        <p class="lede">Parede de capas para todos os modelos, vitrine com iPhone, Xiaomi e acessórios e balcão de atendimento. Venha conhecer na Avenida Atlântica, 630.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="#contato"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+          <a class="btn btn--ghost" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Faça sua cotação</a>
+        </div>
+      </div>
+      <div class="trio">
+        <figure class="big"><img src="img/loja-capas.webp" width="382" height="510" sizes="(max-width:600px) 100vw, 40vw" alt="Parede da loja com dezenas de capas coloridas para celular" loading="lazy" decoding="async"><figcaption><b>Parede de capas</b>Para iPhone e Xiaomi</figcaption></figure>
+        <figure><img src="img/loja-balcao.webp" width="382" height="510" alt="Prateleiras atrás do balcão com acessórios e nichos de iPhones" loading="lazy" decoding="async"><figcaption><b>Balcão</b>Acessórios</figcaption></figure>
+        <figure><img src="img/loja-vitrine.webp" width="382" height="510" alt="Vitrine de vidro com iPhones, Poco, Redmi, fones e carregadores" loading="lazy" decoding="async"><figcaption><b>Vitrine</b>Celulares e fones</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="acessorios" aria-labelledby="h-acc">
+    <div class="wrap split">
+      <figure class="feature"><img src="img/acessorio-carregador.webp" width="382" height="510" sizes="(max-width:900px) 90vw, 460px" alt="Carregador USB-C 20W da Apple na caixa, em frente ao logo da KW Importados" loading="lazy" decoding="async"><figcaption>Carregador USB-C 20W</figcaption></figure>
+      <div class="split__text">
+        <span class="eyebrow">Acessórios em geral</span>
+        <h2 id="h-acc">Tudo o que o seu celular <em>precisa</em>, no mesmo balcão.</h2>
+        <p class="lede">Do carregador original à película colocada na hora. Pergunte pelo modelo do seu aparelho.</p>
+        <ul class="svc svc--2" aria-label="Acessórios que vendemos">
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><rect x="8.5" y="5" width="4" height="4" rx="1"/></svg></span><span><b>Capas</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="m9 9 6-3M9 14l6-3M9 19l6-3"/></svg></span><span><b>Películas</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="13" rx="2.5"/><path d="M9.5 8V3M14.5 8V3M12.5 11.5l-2 3h3l-2 3"/></svg></span><span><b>Carregadores</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg></span><span><b>Fones de ouvido</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v4M5 7h4v4a2 2 0 0 1-4 0Z"/><path d="M7 13v2a5 5 0 0 0 10 0V9"/><path d="M15 5h4v4h-4zM17 3v2"/></svg></span><span><b>Cabos</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2.5"/><path d="m12.5 8-2 4h3l-2 4"/></svg></span><span><b>Powerbanks</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="4"/><circle cx="9" cy="13" r="2.5"/><circle cx="16" cy="13" r="2.5"/><path d="M8 7V5h8v2"/></svg></span><span><b>Caixas JBL</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 6V2.5h6V6M9 18v3.5h6V18M12 9.5V12l1.5 1"/></svg></span><span><b>Smartwatchs</b></span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20cotar%20acess%C3%B3rios." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Cotar acessórios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="jbl" aria-labelledby="h-jbl">
+    <div class="wrap split split--rev">
+      <div class="split__text">
+        <span class="eyebrow">Som JBL</span>
+        <h2 id="h-jbl">Caixas de som JBL, da que vai no bolso à que <em>segura a festa</em>.</h2>
+        <p class="lede">Portáteis para levar no dia a dia, modelos com luz para festa e as grandes, com graves fortes. Pergunte quais modelos e cores estão na loja.</p>
+        <div class="actions">
+          <a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20ver%20os%20modelos%20JBL." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Ver modelos JBL</a>
+        </div>
+      </div>
+      <div class="mosaic mosaic--3 mosaic--jbl">
+        <figure class="big"><img src="img/jbl-boombox.webp" srcset="img/jbl-boombox-sm.webp 700w, img/jbl-boombox.webp 1400w" sizes="(max-width:760px) 100vw, 40vw" width="1400" height="802" alt="Caixa de som JBL grande, preta, com alça superior" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/jbl-go.webp" srcset="img/jbl-go-sm.webp 700w, img/jbl-go.webp 942w" sizes="(max-width:760px) 50vw, 20vw" width="942" height="1000" alt="Caixa de som JBL pequena e preta, com alça de tecido" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/jbl-party.webp" srcset="img/jbl-party-sm.webp 700w, img/jbl-party.webp 792w" sizes="(max-width:760px) 50vw, 20vw" width="792" height="934" alt="Caixa de som JBL de festa com anel de luz verde" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="assistencia" aria-labelledby="h-lab">
+    <div class="lead-line" aria-hidden="true"></div>
+    <div class="wrap split repair">
+      <div class="split__text">
+        <span class="eyebrow">Assistência técnica</span>
+        <h2 id="h-lab">Celular quebrado? A gente <em>conserta</em>.</h2>
+        <p class="lede">Assistência técnica para iPhone, Xiaomi e outras marcas. Conte o modelo e o defeito e receba o orçamento.</p>
+        <ul class="svc svc--2" aria-label="Serviços de assistência técnica">
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="m9 8 3 3-2 2 4 3"/></svg></span><span><b>Troca de tela</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10.5v3"/><path d="m11.5 9-2 3h3l-2 3"/></svg></span><span><b>Troca de bateria</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v5M15 2v5"/><path d="M6.5 7h11v4a5.5 5.5 0 0 1-11 0V7Z"/><path d="M12 16.5V22"/></svg></span><span><b>Conector de carga</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><rect x="8.5" y="5" width="4.5" height="4.5" rx="1.2"/><path d="m12 14 2 2m0-2-2 2"/></svg></span><span><b>Vidro traseiro</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2 2 0 0 1 5 6.5h2.2l1.6-2h6.4l1.6 2H19a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><circle cx="12" cy="13" r="3.6"/></svg></span><span><b>Câmeras</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg></span><span><b>Alto-falante e microfone</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></span><span><b>Reparo em placa</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M12 9v4M12 16h.01"/></svg></span><span><b>Botões e Face ID</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4.5h-4.5"/></svg></span><span><b>Software e atualização</b></span></li>
+          <li><span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2.5 2.5 6 3 6 3v5c0 5-6 9-6 9s-6-4-6-9V6s3.5-.5 6-3Z"/><path d="M12 9v5M12 17h.01"/></svg></span><span><b>Oxidação e queda na água</b></span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20assist%C3%AAncia%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento</a>
+        </div>
+      </div>
+      <figure class="repair__art"><img src="img/assistencia.webp" srcset="img/assistencia-sm.webp 480w, img/assistencia.webp 773w" sizes="(max-width:900px) 80vw, 460px" width="773" height="1041" alt="Dois iPhones lado a lado: um com a tela trincada e outro com a tela nova" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="clientes" aria-labelledby="h-cl">
+    <div class="lead-line" aria-hidden="true"></div>
+    <div class="wrap reviews">
+      <div class="split__text">
+        <span class="eyebrow">Clientes satisfeitas</span>
+        <h2 id="h-cl">Quem compra aqui <em>volta e indica</em>.</h2>
+        <div class="stars" role="img" aria-label="Nota 5 de 5 estrelas no Google">
+          <span class="stars__row" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+          <span class="stars__txt"><b>5,0</b> no Google</span>
+        </div>
+        <p class="lede">Cada compra sai na sacola da KW Importados, direto do nosso balcão. Veja o que os clientes dizem na nossa ficha do Google.</p>
+        <div class="actions">
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=KW%20Importados%2C%20Av.%20Atl%C3%A2ntica%2C%20630%2C%20Cianorte%20-%20PR&amp;query_place_id=ChIJoxR7pmxb7ZQRs6AFOu0CbcQ" target="_blank" rel="noopener noreferrer">Ver avaliações no Google</a>
+        </div>
+      </div>
+      <div class="reviews__pics">
+        <figure><img src="img/cliente-1.webp" width="828" height="828" sizes="(max-width:600px) 50vw, 30vw" alt="Cliente sorrindo com o celular novo e a sacola da KW Importados em frente ao logo da loja" loading="lazy" decoding="async"></figure>
+        <figure><img src="img/cliente-2.webp" width="720" height="720" sizes="(max-width:600px) 50vw, 30vw" alt="Cliente segurando a caixa do iPhone verde e a sacola da KW Importados em frente ao logo da loja" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="equipe" aria-labelledby="h-eq">
+    <div class="wrap owner">
+      <div class="owner__text">
+        <span class="role">Quem atende você</span>
+        <h2 id="h-eq" class="name">Equipe <em>KW Imports</em></h2>
+        <p class="quote">A gente está há mais de 6 anos atrás do balcão da Avenida Atlântica, atendendo Cianorte de perto.</p>
+        <p class="lede">Celulares Xiaomi, Apple e Realme, acessórios em geral e assistência técnica no mesmo lugar. Chame a equipe e faça sua cotação.</p>
+        <ul class="owner__facts">
+          <li><b class="grad-text">6 anos</b><span>de loja física</span></li>
+          <li><b class="grad-text">Garantia</b><span>nos celulares</span></li>
+          <li><b class="grad-text">Suporte</b><span>com assistência técnica</span></li>
+        </ul>
+        <div class="actions"><a class="btn btn--solid" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar com a equipe</a></div>
+      </div>
+      <figure class="ceo"><img src="img/equipe.webp" srcset="img/equipe-sm.webp 720w, img/equipe.webp 1254w" sizes="(max-width:760px) 100vw, 45vw" width="1254" height="1254" alt="Equipe da KW Importados: um homem de boné e uma mulher de cabelo longo, ambos com camisa polo preta e detalhes laranja" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="contact sec" id="contato" aria-labelledby="h-ct">
+    <div class="lead-line lead-line--ink" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Localização e contato</span>
+          <h2 id="h-ct">Venha até a loja ou <em>faça sua cotação</em>.</h2>
+        </div>
+        <p class="lede">Avenida Atlântica, 630, Residencial Atlântico IV, Cianorte, PR. Atendimento pelo WhatsApp e pelo Instagram.</p>
+      </div>
+      <div class="channels">
+        <a class="channel" data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">
+          <span class="channel__icon"><svg aria-hidden="true"><use href="#i-wa"/></svg></span>
+          <div><h3>Faça sua cotação</h3><p>Mande o modelo que você procura ou o defeito do seu aparelho pelo WhatsApp.</p></div>
+          <span class="channel__go">Chamar no WhatsApp<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel" href="https://www.instagram.com/kwimportadoss/" target="_blank" rel="noopener noreferrer">
+          <span class="channel__icon"><svg aria-hidden="true"><use href="#i-ig"/></svg></span>
+          <div><h3>Instagram</h3><p>Novidades, chegadas e ofertas no @kwimportadoss.</p></div>
+          <span class="channel__go">Seguir no Instagram<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel" href="#mapa">
+          <span class="channel__icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <div><h3>Localização</h3><p>Avenida Atlântica, 630, Cianorte, PR. Loja física há mais de 6 anos.</p></div>
+          <span class="channel__go">Ver no mapa<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+
+      <div class="locbox" id="mapa">
+        <div class="locbox__media">
+          <figure class="locbox__photo"><img src="img/fachada.webp" width="680" height="510" sizes="(max-width:760px) 100vw, 50vw" alt="Fachada da KW Importados na Avenida Atlântica, 630, com letreiro iluminado e vitrines" loading="lazy" decoding="async"></figure>
+          <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=KW%20Importados%2C%20Av.%20Atl%C3%A2ntica%2C%20630%2C%20Cianorte%20-%20PR&amp;query_place_id=ChIJoxR7pmxb7ZQRs6AFOu0CbcQ" target="_blank" rel="noopener noreferrer" aria-label="Abrir a localização da KW Importados no Google Maps">
+            <svg class="map__svg" viewBox="-470 -330 940 660" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect x="-3000" y="-3000" width="6000" height="6000" fill="#151413"/><path d="M-151 23 L-147 28 L-141 32 L-135 35 L-128 36 L-121 36 L-115 34 L-109 30 L-104 25 L-100 18 L-99 11 L-99 3 L-101 -4 L-106 -10 L-111 -15 L-118 -19 L-125 -20 L-133 -19 L-140 -17 L-146 -12 L-151 -7 L-154 0 L-155 8 L-154 16 L-151 23Z" fill="#1f2d1e"/><path d="M-218 338 L-206 304 L-220 300 L-230 328 L-225 330 L-226 335 L-218 338Z" fill="#2a2522"/><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="#34302d" stroke-width="16" d="M-165 -8 L-320 -21 L-569 -48 L-702 -60 L-761 -67 L-808 -71 L-901 -79 L-922 -81 M-157 -331 L-147 -27 M-123 -31 L-132 -332 M-132 -332 L-140 -600 L-145 -798 L-149 -964 L-166 -998 M-166 -998 L-168 -963 L-168 -799 L-165 -594 L-164 -548 L-157 -331 M-157 -331 L-193 -337 L-251 -424 L-474 -757 M1510 661 L1433 634 L1319 597 L1176 562 L1044 529 L919 499 L797 468 L676 437 L654 431 L518 398 L388 366 L256 333 L125 301 L-5 269 L-131 238 L-296 197 M-157 -331 L-132 -332 L-2 -335 M-926 2025 L-839 1834 L-684 1496 L-674 1476 L-525 1146 L-410 893 L-272 587 L-232 487 L-186 373 L-131 238 L-97 159 L15 36 M-501 364 L-480 385 L-232 487 L20 584 L269 679 L521 777 L542 785 L824 900 M1466 805 L1276 748 L995 664 L622 577 L600 572 M1153 1137 L998 1077 L872 1029 L789 996 L748 981 L621 932 L503 886 L477 876 L352 828 L228 780 L100 731 L-22 684 L-147 635 L-272 587 L-569 472 M-693 2168 L-593 1947 L-440 1610 L-433 1589 L-283 1257 L-167 1005 L-22 684 L20 584 L125 301 M-5 269 L-79 467 M256 333 L172 552 M518 398 L426 642 M388 366 L269 679 L228 780 L74 1116 L-43 1367 L-192 1702 L-201 1722 M-702 -35 L-595 76 L-496 172 L-410 270 L-390 294 M-1309 1011 L-1260 956 L-1049 732 L-766 448 L-496 172 L-324 0 M-1412 912 L-1361 858 L-1147 635 L-867 353 L-595 76 M-16 -1062 L-8 -937 L-5 -776 L-9 -635 L-2 -335 M113 -668 L121 -339 L135 21 M252 -706 L260 -343 L269 34 M280 -1275 L314 -1122 L366 -923 L375 -878 L377 -866 L378 -803 L379 -735 L384 -346 L393 46 M496 -740 L505 -350 L516 58 M502 -1423 L524 -1336 L556 -1203 L557 -1200 L615 -989 L620 -950 L624 -872 L633 -744 L635 -354 L649 71 M760 -746 L765 -357 L772 -132 L777 86 M1252 -119 L1167 -121 L1037 -125 L909 -128 L772 -132 M-997 -1056 L-920 -941 L-845 -829 L-772 -718 L-698 -607 L-623 -495 L-549 -385 L-475 -273 L-400 -161 L-330 -56 L-320 -21 L-324 0 M-151 -25 L-363 -346 L-588 -682 L-811 -1015 M-2547 -377 L-2292 -353 L-1900 -314 L-1513 -275 L-1235 -247 L-1024 -389 L-698 -607 L-588 -682 L-474 -757 L-422 -793 L-368 -830 L-352 -844 L-318 -880 M-719 -1077 L-422 -793 L-177 -555 L-164 -548 M-1201 -114 L-1185 -118 L-1176 -122 L-948 -277 L-623 -495 M-875 -169 L-549 -385 M-251 -424 L-363 -346 L-475 -273 L-761 -67 M-569 -48 L-400 -161 M-2 -335 L121 -339 L260 -343 L384 -346 L505 -350 L635 -354 L765 -357 L902 -361 L1030 -365 L1125 -368 M-2 -335 L8 13 M-973 256 L-867 353 L-766 448 L-674 541 L-654 559 M-1547 815 L-1478 745 L-1429 698 L-1387 659 L-1248 528 L-1196 476 L-973 256 L-871 154 L-702 -35 L-702 -60 M-937 -56 L-926 -55 L-901 -53 L-702 -35 L-690 -33 L-324 0 L-166 18 M1545 415 L1380 382 L1241 364 L1104 343 L975 324 L848 305 L727 286 L707 282 L429 245 L167 203 M388 366 L429 245 L465 163 M230 30 L220 56 L167 203 L125 301 M-390 294 L-384 301 L-377 307 L-186 373 M-165 -594 L-140 -600 L-9 -635 L113 -668 L252 -706 L352 -732 L379 -735 L399 -738 L496 -740 L633 -744 L760 -746 L967 -752 M494 84 L486 120 L465 163"/><path stroke="#4d4540" stroke-width="22" d="M85 1799 L225 1489 L338 1238 L503 886 L542 785 L622 577 L676 437 M654 431 L600 572 L521 777 L477 876 L316 1228 L204 1480 L67 1789 M-296 197 L-140 45 M-801 711 L-654 559 L-569 472 L-480 385 L-395 299 L-390 294 L-296 197 M-162 27 L-410 270 L-501 364 L-674 541 L-821 693 L-949 828 L-1161 1052 L-1285 1180 L-1303 1199 M727 286 L751 216 L760 107 M734 114 L722 209 L716 253 L707 282 M707 282 L654 431 M676 437 L727 286 M760 107 L762 102 M762 102 L762 95 L759 90 L755 85 L750 82 L743 81 L737 83 L732 86 L728 91 L727 97 L727 104 L729 109 L734 114 L739 117 L745 117 L751 116 L757 112 L760 107"/><path stroke="#6e3e14" stroke-width="22" d="M-165 -8 L-320 -21 L-569 -48 L-702 -60 L-761 -67 L-808 -71 L-901 -79 L-922 -81 M1390 149 L1356 143 L1174 122 L1157 121 L1136 121 L1043 109 L1028 108 L912 96 L777 86 L755 85 M-165 -8 L-168 5 L-166 18 L-162 27 L-153 38 L-140 45 L-122 45 L-105 38 L-94 23 L-91 5 M-91 5 L-95 -11 L-107 -24 L-123 -31 L-135 -31 L-147 -27 L-151 -25 L-159 -17 L-165 -8 M-937 -56 L-926 -55 L-901 -53 L-702 -35 L-690 -33 L-324 0 L-166 18 M760 107 L905 115 L1040 129 L1105 139 M737 83 L649 71 L516 58 L393 46 L269 34 L230 30 L135 21 L8 13 L-91 5 M-94 23 L15 36 L220 56 L494 84 L729 109"/><path stroke="#F7861E" stroke-opacity=".6" stroke-width="5" d="M-165 -8 L-320 -21 L-569 -48 L-702 -60 L-761 -67 L-808 -71 L-901 -79 L-922 -81 M1390 149 L1356 143 L1174 122 L1157 121 L1136 121 L1043 109 L1028 108 L912 96 L777 86 L755 85 M-165 -8 L-168 5 L-166 18 L-162 27 L-153 38 L-140 45 L-122 45 L-105 38 L-94 23 L-91 5 M-91 5 L-95 -11 L-107 -24 L-123 -31 L-135 -31 L-147 -27 L-151 -25 L-159 -17 L-165 -8 M-937 -56 L-926 -55 L-901 -53 L-702 -35 L-690 -33 L-324 0 L-166 18 M760 107 L905 115 L1040 129 L1105 139 M737 83 L649 71 L516 58 L393 46 L269 34 L230 30 L135 21 L8 13 L-91 5 M-94 23 L15 36 L220 56 L494 84 L729 109"/></g><defs><path id="st0" d="M220 56 L494 84"/><path id="st1" d="M-410 270 L-162 27"/><path id="st2" d="M-496 172 L-324 0"/><path id="st3" d="M-296 197 L-131 238"/><path id="st4" d="M121 -339 L135 21"/><path id="st5" d="M384 -346 L393 46"/><path id="st6" d="M-400 -161 L-330 -56"/><path id="st7" d="M-363 -346 L-151 -25"/><path id="st8" d="M260 -343 L269 34"/><path id="st9" d="M-2 -335 L8 13"/></defs><g font-family="Hanken Grotesk,system-ui,sans-serif" font-weight="600" paint-order="stroke" stroke="#151413" stroke-width="5"><text font-size="19" fill="#FFD3A1" dy="6"><textPath href="#st0" startOffset="50%" text-anchor="middle">Avenida Atlântica</textPath></text><text font-size="19" fill="#d2c9c3" dy="6"><textPath href="#st1" startOffset="50%" text-anchor="middle">Avenida Ilha do Mel</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st2" startOffset="50%" text-anchor="middle">Rua Barcelona</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st3" startOffset="50%" text-anchor="middle">Rua Bromélia</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st4" startOffset="50%" text-anchor="middle">Rua Caióba</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st5" startOffset="50%" text-anchor="middle">Rua Guaratuba</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st6" startOffset="50%" text-anchor="middle">Rua Guarujá</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st7" startOffset="50%" text-anchor="middle">Rua Maresias</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st8" startOffset="50%" text-anchor="middle">Rua Matinhos</textPath></text><text font-size="17" fill="#a39a94" dy="6"><textPath href="#st9" startOffset="50%" text-anchor="middle">Rua Pontal Sul</textPath></text></g></svg>
+            <span class="map__attr">© OpenStreetMap</span>
+            <span class="map__label"><svg aria-hidden="true"><use href="#i-pin"/></svg>KW Importados</span>
+            <span class="map__pin" aria-hidden="true"><span class="pin"><span class="pin__ring"></span><span class="pin__ring"></span><span class="pin__ring"></span><span class="pin__shadow"></span><span class="pin__body"></span></span></span>
+            <span class="map__open">Abrir no Google Maps<svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+        <div class="locinfo">
+          <address><b>KW Importados</b>Avenida Atlântica, 630<br>Residencial Atlântico IV<br>Cianorte, PR, 87200-286</address>
+          <div class="hours">
+            <b>Horário de funcionamento</b>
+            <!-- CONFERIR: horário copiado da ficha da loja no Google -->
+            <dl>
+              <dt>Seg a sex</dt><dd>8h às 18h15</dd>
+              <dt>Sábado</dt><dd>8h às 16h</dd>
+              <dt>Domingo</dt><dd class="off">Fechado</dd>
+            </dl>
+          </div>
+          <div class="btns">
+            <a class="btn btn--solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=KW%20Importados%2C%20Av.%20Atl%C3%A2ntica%2C%20630%2C%20Cianorte%20-%20PR&amp;destination_place_id=ChIJoxR7pmxb7ZQRs6AFOu0CbcQ" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-pin"/></svg>Rota no Google Maps</a>
+            <a class="btn btn--ghost" href="https://waze.com/ul?ll=-23.6498459,-52.6279813&amp;navigate=yes" target="_blank" rel="noopener noreferrer">Abrir no Waze</a>
+            <a class="btn btn--ghost" href="https://maps.apple.com/?ll=-23.6498459,-52.6279813&amp;q=KW%20Importados" target="_blank" rel="noopener noreferrer">Apple Mapas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><a href="#inicio" aria-label="KW Importados, voltar ao início"><img src="img/logo.png" alt="KW Importados" width="335" height="120" loading="lazy"></a></div>
+    <div><h2 class="foot__h">Loja</h2><p>Avenida Atlântica, 630<br>Residencial Atlântico IV<br>Cianorte, PR</p></div>
+    <div><h2 class="foot__h">Atendimento</h2><a data-cta href="https://wa.me/5544997578738?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">WhatsApp (44) 99757-8738</a><p class="hours-mini">Seg a sex, 8h às 18h15<br>Sáb, 8h às 16h</p></div>
+    <div><h2 class="foot__h">Redes</h2><a href="https://www.instagram.com/kwimportadoss/" target="_blank" rel="noopener noreferrer">Instagram @kwimportadoss</a></div>
+    <p class="copy">KW Importados · Xiaomi, Apple, acessórios e assistência técnica · Cianorte, PR</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- malha de linhas (hero) ---------- */
+  const cv = document.getElementById('mesh');
+  const ctx = cv.getContext('2d');
+  let W = 0, H = 0, dpr = 1, t = 0, running = false, last = 0;
+  function size() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const r = cv.getBoundingClientRect();
+    W = r.width; H = r.height;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  const ribbons = [
+    { y: .66, amp: .20, f: 1.35, sp: .16, n: 54, speed: 1, a: .34 },
+    { y: .22, amp: .13, f: 1.05, sp: .10, n: 38, speed: -.7, a: .22 }
+  ];
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    const narrow = W < 700;
+    for (const r of ribbons) {
+      const g = ctx.createLinearGradient(0, 0, W, 0);
+      g.addColorStop(0, 'rgba(247,134,30,0)');
+      g.addColorStop(narrow ? .2 : .38, `rgba(247,134,30,${r.a * .35})`);
+      g.addColorStop(1, `rgba(247,134,30,${r.a})`);
+      ctx.strokeStyle = g; ctx.lineWidth = .8;
+      for (let i = 0; i < r.n; i++) {
+        const k = i / r.n;
+        ctx.beginPath();
+        for (let x = -10; x <= W + 10; x += 8) {
+          const u = x / W;
+          const env = .35 + .65 * u;
+          const y = H * (r.y
+            + r.amp * env * Math.sin(u * Math.PI * r.f + t * r.speed + k * 1.6) * Math.cos(u * 2.1 - k * 1.1 + t * .5 * r.speed)
+            + (k - .5) * r.sp * Math.sin(u * 2.6 + t * .4 + 1));
+          x === -10 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+    }
+  }
+  function loop(now) {
+    if (!running) return;
+    if (now - last > 33) { t += .006; draw(); last = now; }
+    requestAnimationFrame(loop);
+  }
+  size(); draw();
+  addEventListener('resize', () => { size(); draw(); }, { passive: true });
+  if (!reduce && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      const was = running; running = e.isIntersecting;
+      if (running && !was) requestAnimationFrame(loop);
+    }).observe(cv);
+  }
+
+  /* ---------- carrosséis ---------- */
+  const setVW = () => document.documentElement.style.setProperty('--vw', document.documentElement.clientWidth + 'px');
+  setVW(); addEventListener('resize', setVW, { passive: true });
+  document.querySelectorAll('.rail-ctrl[data-for]').forEach(ctrl => {
+    const rail = document.getElementById(ctrl.dataset.for);
+    const slides = [...rail.children];
+    const pager = ctrl.querySelector('.pager');
+    const prev = ctrl.querySelector('[data-prev]'), next = ctrl.querySelector('[data-next]');
+    slides.forEach(() => pager.appendChild(document.createElement('i')));
+    const dots = [...pager.children];
+    let cur = -1;
+    const center = el => el.offsetLeft + el.offsetWidth / 2;
+    function go(i) {
+      i = Math.max(0, Math.min(slides.length - 1, i));
+      rail.scrollTo({ left: center(slides[i]) - rail.clientWidth / 2, behavior: reduce ? 'auto' : 'smooth' });
+    }
+    function update() {
+      const mid = rail.scrollLeft + rail.clientWidth / 2;
+      let best = 0, d = Infinity;
+      slides.forEach((s, i) => { const k = Math.abs(center(s) - mid); if (k < d) { d = k; best = i; } });
+      if (best === cur) return;
+      cur = best;
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === cur));
+      dots.forEach((x, i) => x.classList.toggle('on', i === cur));
+      prev.disabled = cur === 0;
+      next.disabled = cur === slides.length - 1;
+    }
+    prev.addEventListener('click', () => go(cur - 1));
+    next.addEventListener('click', () => go(cur + 1));
+    slides.forEach((s, i) => s.addEventListener('click', () => { if (i !== cur) go(i); }));
+    rail.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1); }
+    });
+    let raf = 0;
+    rail.addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); }, { passive: true });
+    addEventListener('resize', () => { cur = -1; update(); }, { passive: true });
+    if (slides.length > 2) rail.scrollLeft = center(slides[1]) - rail.clientWidth / 2;
+    update();
+  });
+
+  })();
+</script>
+</body>
+</html>

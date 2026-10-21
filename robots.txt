@@ -1,0 +1,6 @@
+# TODO: PREENCHER, troque o domínio abaixo pelo link de produção do Vercel
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/sitemap.xml

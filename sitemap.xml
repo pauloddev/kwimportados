@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: PREENCHER, troque o domínio pelo link de produção do Vercel -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+</urlset>
